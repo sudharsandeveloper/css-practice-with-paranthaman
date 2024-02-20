@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+.container{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.header-section{
+  background-color: #002E5B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.title-section{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: baseline;
+  gap: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.title-t1{
+  color: #ffff;
+}
+
+.title-t2{
+  color: #FBBA42;
+}
+
+.menu-section{
+  height: 100%;
+  width: 100%;
+}
+
+.menu-section-ul{
+  color: #ffff;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-section-ul li{
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.menu-1, .menu-2{
+  position: relative;
+  padding-right: 20px;
+}
+
+.menu-1::after, .menu-2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0; 
+  width: 2px;
+  background-color: #BEBEBE;
+}
+
+.profile-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 120px;
+  gap: 10px;
+}
+
+.profile-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+/* banner section */
+.banner-section{
+  background-image: url('./Public//Images/banner-img.svg');
+  background-repeat: no-repeat;
+  height: 203px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.banner-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.banner-section span{
+  font-family: 'Rubik';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-t1{
+  width: 365px;
+  padding-left: 50px;
+  text-transform: uppercase;
 }
