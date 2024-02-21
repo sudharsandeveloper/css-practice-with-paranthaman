@@ -1,3 +1,6 @@
+body{
+  background-color: aliceblue;
+}
 .container{
   margin-left: 15%;
   margin-right: 15%;
@@ -46,6 +49,10 @@
 .menu-section-ul li{
   cursor: pointer;
   padding-left: 5px;
+}
+
+.menu-section-ul li:hover{
+  color: #FBBA42;
 }
 
 .menu-1, .menu-2{
@@ -110,4 +117,31 @@
   width: 365px;
   padding-left: 50px;
   text-transform: uppercase;
+}
+
+/* counter section */
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.logo-sec{
+  background-color: #002E5B;
+  padding: 15px;
+  border-radius: 20px;
+}
+.con-title{
+  display: flex;
+}
+
+.batch{
+  color: grey;
+  background-color: yellow;
+  border-radius: 30%;
+}
+
+.rate{
+
 }
