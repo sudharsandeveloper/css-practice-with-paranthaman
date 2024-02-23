@@ -145,3 +145,54 @@ body{
 .rate{
 
 }
+
+.footer-log{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer{
+  color: #DEE1E3;
+  background-color: #002E5B
+}
+
+.footer-con{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 17px;
+}
+
+.sec-1-des{
+  width: 453px;
+}
+
+.f-title{
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+}
+
+.con-heading{
+  color: #FBBA42;
+  font-size: 20px;
+  font-family: 'Rubik';
+  line-height: 23.7px;
+  margin-bottom: 20px;
+}
+
+.footer-copyright{
+  background-color: #03213F;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer-end{
+  display: flex;
+  justify-content: space-between;
+}
