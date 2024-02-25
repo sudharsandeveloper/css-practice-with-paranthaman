@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <BannerSection />
-      {/* <CountSection /> */}
+      <CountSection />
       <Footer />
     </>
   );
