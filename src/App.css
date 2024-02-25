@@ -15,6 +15,10 @@ body{
   align-items: center;
 }
 
+.display-flex{
+  display: flex;
+}
+
 .title-section{
   display: flex;
   justify-content: center;
@@ -166,6 +170,15 @@ body{
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 17px;
+  line-height: 30px;
+}
+
+.footer-menu-sep{
+  margin-bottom: 20px;
+}
+
+.site-map{
+  /* padding: 0px 45px; */
 }
 
 .sec-1-des{
@@ -175,7 +188,36 @@ body{
 .f-title{
   display: flex;
   flex-direction: column;
-  text-wrap: wrap;
+  max-width: 450px;
+}
+
+.social-icon-div{
+  display: flex;
+  gap: 25px;
+}
+
+.social-icons{
+  color: white;
+  background-color: #002E5B;
+  border-radius: 50%;
+  border: dashed 1px white;
+  height: 14px;
+  width: 14px;
+  padding: 10px;
+}
+
+.social-icons:hover{
+  background-color: #FBBA42;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-us-adress{
+  display: flex;
+}
+
+.contactus-icon{
+  margin-right: 14px;
 }
 
 .con-heading{

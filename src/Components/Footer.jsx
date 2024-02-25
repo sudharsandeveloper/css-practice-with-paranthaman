@@ -1,5 +1,10 @@
 import React from 'react'
 import image from '../Public/Images/profits 1.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faTwitter, faLinkedinIn, faGooglePlusG } from '@fortawesome/free-brands-svg-icons';
+import addressImg from '../Public/Images/address.svg';
+import emailImg from '../Public/Images/email.svg';
+import mobileImg from '../Public/Images/mobile.svg';
 
 function Footer() {
   return (
@@ -13,36 +18,45 @@ function Footer() {
                     <span className='title-t1'>OLG </span>
                     <span className='title-t2'>FINANCING</span>
                 </div>
-                <div>
+                <div className='footer-menu-sep'>
                     <span className='sec-1-des'>
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...
                     </span>
                 </div>
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div className='social-icon-div'>
+                    <span><FontAwesomeIcon className='social-icons' icon={faFacebookF} /></span>
+                    <span><FontAwesomeIcon className='social-icons' icon={faTwitter} /></span>
+                    <span><FontAwesomeIcon className='social-icons' icon={faLinkedinIn} /></span>
+                    <span><FontAwesomeIcon className='social-icons' icon={faGooglePlusG} /></span>
                 </div>
             </div>
-            <div className='f-title'>
+            <div className='f-title site-map'>
                 <span className='con-heading'>Site Map</span>
-                <span>Invoice</span>
-                <span>Transaction History</span>
+                <span className='footer-menu-sep'>Invoice</span>
+                <span className='footer-menu-sep'>Transaction History</span>
                 <span>Profile</span>
             </div>
             <div className='f-title'>
                 <span className='con-heading'>Contact Us</span>
-                <div>
+                <div className="contact-us-adress footer-menu-sep">
+                    <div className='contactus-icon'>
+                        <img src={addressImg} alt="" />
+                    </div>
                     <div>
-                        <span>21/22 street name, Locality, City name,</span>
+                        <span style={{'display': 'block'}}>21/22 street name, Locality, City name,</span>
                         <span>Country, Pincode - 65431</span>
                     </div>
                 </div>
-                <div>
+                <div className='footer-menu-sep display-flex'>
+                    <div className='contactus-icon'>
+                        <img src={emailImg} alt="" />
+                    </div>
                     <span>contact@ olgfinancing.com</span>
                 </div>
-                <div>
+                <div className='display-flex'>
+                    <div className='contactus-icon'>
+                        <img src={mobileImg} alt="" />
+                    </div>
                     <span>+1 348 034 087 522</span>
                 </div>
             </div>
